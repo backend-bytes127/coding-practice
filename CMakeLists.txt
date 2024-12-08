@@ -5,9 +5,7 @@ project(CodeforcesPractice)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Create an executable for each source file
-file(GLOB CPP_SOURCES "*.cpp")
-foreach(SOURCE_FILE ${CPP_SOURCES})
-    get_filename_component(EXECUTABLE_NAME ${SOURCE_FILE} NAME_WE)
-    add_executable(${EXECUTABLE_NAME} ${SOURCE_FILE})
-endforeach() 
+
+
+add_executable(1_1 1_1.1.cpp)
+add_executable(1_2 1_1.2.cpp)
